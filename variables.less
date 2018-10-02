@@ -1,9 +1,38 @@
 @import 'mediawiki.ui/variables';
 
+/*
+* Droid Arabic Naskh (Arabic) http://www.google.com/fonts/earlyaccess
+*/
+@font-face {
+    font-family: 'Droid Arabic Naskh';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://static.ubuntu.ir/fonts/DroidNaskh-Regular.eot');
+    src: url('https://static.ubuntu.ir/fonts/DroidNaskh-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://static.ubuntu.ir/fonts/DroidNaskh-Regular.woff2') format('woff2'),
+    url('https://static.ubuntu.ir/fonts/DroidNaskh-Regular.woff') format('woff'),
+    url('https://static.ubuntu.ir/fonts/DroidNaskh-Regular.ttf') format('truetype');
+};
+
+@font-face {
+    font-family: 'Droid Arabic Naskh';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://static.ubuntu.ir/fonts/DroidNaskh-Bold.eot');
+    src: url('https://static.ubuntu.ir/fonts/DroidNaskh-Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://static.ubuntu.ir/fonts/DroidNaskh-Bold.woff2') format('woff2'),
+    url('https://static.ubuntu.ir/fonts/DroidNaskh-Bold.woff') format('woff'),
+    url('https://static.ubuntu.ir/fonts/DroidNaskh-Bold.ttf') format('truetype');
+};
+
+.mw-wiki-logo:lang(fa) {
+	background-image: url('https://static.ubuntu.ir/images/logo_footer.png') !important;
+}
+
 @html-font-size: 100%;
 
-@font-family-serif: 'Linux Libertine', 'Georgia', 'Times', serif;
-@font-family-sans-serif: sans-serif;
+@font-family-serif: 'Droid Arabic Naskh','Linux Libertine', 'Georgia', 'Times', serif;
+@font-family-sans-serif: 'Droid Arabic Naskh',sans-serif;
 
 // Page content
 // FIXME: Use global variable since Echo and CentralNotice use this variable
