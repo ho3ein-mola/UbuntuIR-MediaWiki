@@ -9,8 +9,8 @@ module.exports = function ( grunt ) {
 	grunt.initConfig( {
 		eslint: {
 			all: [
-				'*.js',
-				'**/*.js',
+				'!*.js',
+				'!**/*.js',
 				'!node_modules/**',
 				'!vendor/**'
 			]
@@ -29,8 +29,8 @@ module.exports = function ( grunt ) {
 				syntax: 'less'
 			},
 			all: [
-				'*.{less,css}',
-				'**/*.{less,css}',
+				'!*.{less,css}',
+				'!**/*.{less,css}',
 				'!node_modules/**',
 				'!skinStyles/jquery.ui/**',
 				'!vendor/**'
