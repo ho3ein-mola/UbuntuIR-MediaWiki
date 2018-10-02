@@ -1,5 +1,5 @@
 {
-	"name": "Vector",
+	"name": "UbuntuIr",
 	"author": [
 		"Trevor Parscal",
 		"Roan Kattouw",
@@ -17,10 +17,10 @@
 		"vector": "GlobalVarConfig::newInstance"
 	},
 	"ValidSkinNames": {
-		"vector": "Vector"
+		"ubuntuir": "Vector"
 	},
 	"MessagesDirs": {
-		"Vector": [
+		"UbuntuIr": [
 			"i18n"
 		]
 	},
