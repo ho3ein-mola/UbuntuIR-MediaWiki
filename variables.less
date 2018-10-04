@@ -1,4 +1,5 @@
 @import 'mediawiki.ui/variables';
+@import (css) url("https://static.ubuntu.ir/css/ubuntuir.css");
 
 /*
 * Droid Arabic Naskh (Arabic) http://www.google.com/fonts/earlyaccess
@@ -25,10 +26,17 @@
     url('https://static.ubuntu.ir/fonts/DroidNaskh-Bold.ttf') format('truetype');
 };
 
+#globalWrapper{
+    position:relative;
+    margin-top:0;
+}
+
 .mw-wiki-logo:lang(fa) {
 	background-image: url('https://static.ubuntu.ir/images/logo_footer.png') !important;
 }
-
+.bingo {
+    color: red;
+}
 @html-font-size: 100%;
 
 @font-family-serif: 'Droid Arabic Naskh','Linux Libertine', 'Georgia', 'Times', serif;
