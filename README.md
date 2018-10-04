@@ -23,8 +23,6 @@
 
 header_body ( اضافه نشد )
 
+<p dir='rtl' align='right'>باید فایب هیدر بادی رو از ادرس زیر دانلود و  در بالای صفحه لود کنیم</p>                   
 
-<div dir="rtl" align="right>
-  باید فایل هیدر بادی رو از ادرس زیر دانلود و در بالای صفحه اینکلود کنیم
-</div>                      
-
+<p dir='rtl' align='right'>https://static.ubuntu.ir/header_body.php</p>                   
