@@ -1,28 +1,23 @@
-Vector Skin
-========================
+# قالب UbuntuIR برای مدیا ویکی فورک شده از VECTOR
 
-Configuration options
----------------------
+![alt text](http://imgurl.ir/uploads/n07505_Screenshot_2018-10-04_Iranian_Ubuntu_Community.png)
 
-### $wgVectorPrintLogo
+### فایل های اضافه ویرایش شده :
 
-Logo used in print styles. Keys are `url`, `width`, and `height` (in
-pixels). Note that this solution only works correctly if the image
-pointed to by `url` is an SVG that does not specify width and height
-attributes, or its width and height match the corresponding variables
-below. Alternatively, a PNG or other type of image can be used, but
-its dimensions also need to match the corresponding variable below.
-That in turn may result in blurry images, though.
+- css اضافه شد
 
-The URL can be absolute or relative.
+- images اضافه شد
 
-Example configuration:
+- footer اضافه شد
 
-	$wgVectorPrintLogo = [
-		'url' => 'https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg',
-		'width' => 174,
-		'height' => 27
-	];
+- footer_body اضاقه شد
 
-* Type: `Array`
-* Default: `false`
+- header اضافه شد
+
+
+### باگ :
+
+header_body ( اضافه نشد )
+
+خب مشکا این هست که باید فایل header_body رو از ادرس https://static.ubuntu.ir/header_body.php دانلود یا اینکلود توی قالب در بالای صفحه لود کنیم .
+
